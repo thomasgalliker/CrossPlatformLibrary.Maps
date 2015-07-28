@@ -1,0 +1,7 @@
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.Platform.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.Platform.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\obj\Debug\CrossPlatformLibrary.Maps.iOSUnified.csprojResolveAssemblyReference.cache
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\obj\Debug\CrossPlatformLibrary.Maps.Platform.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\obj\Debug\CrossPlatformLibrary.Maps.Platform.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.pdb

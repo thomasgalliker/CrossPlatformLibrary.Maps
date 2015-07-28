@@ -1,0 +1,5 @@
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.NuGet\bin\Release\CrossPlatformLibrary.Maps.NuGet.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.NuGet\bin\Release\CrossPlatformLibrary.Maps.NuGet.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.NuGet\obj\Release\CrossPlatformLibrary.Maps.NuGet.csprojResolveAssemblyReference.cache
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.NuGet\obj\Release\CrossPlatformLibrary.Maps.NuGet.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.NuGet\obj\Release\CrossPlatformLibrary.Maps.NuGet.pdb

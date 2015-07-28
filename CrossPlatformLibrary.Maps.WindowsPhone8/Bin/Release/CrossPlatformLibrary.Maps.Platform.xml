@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CrossPlatformLibrary.Maps.Platform</name>
+    </assembly>
+    <members>
+        <member name="T:CrossPlatformLibrary.Maps.Controls.PushpinCluster">
+            <summary>
+                Represents a pushpin on the map.
+            </summary>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.Controls.PushpinCluster.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:CrossPlatformLibrary.Maps.Controls.PushpinCluster"/> class.
+            </summary>
+        </member>
+        <member name="T:CrossPlatformLibrary.Maps.Controls.UserLocationMarker">
+            <summary>
+                Represents a pushpin on the map.
+            </summary>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.Controls.UserLocationMarker.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:CrossPlatformLibrary.Maps.Controls.Pushpin"/> class.
+            </summary>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.Controls.UserLocationMarker.#ctor(System.Device.Location.GeoCoordinate)">
+            <summary>
+                Initializes a new instance of the <see cref="T:CrossPlatformLibrary.Maps.Controls.UserLocationMarker"/> class.
+            </summary>
+            <param name="userLocation">The user location.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.ExternalMaps.NavigateTo(System.String,System.Double,System.Double,CrossPlatformLibrary.Maps.NavigationType)">
+            <summary>
+                Navigate to specific latitude and longitude.
+            </summary>
+            <param name="name">Label to display</param>
+            <param name="latitude">Lat</param>
+            <param name="longitude">Long</param>
+            <param name="navigationType">Type of navigation</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.ExternalMaps.NavigateTo(System.String,System.String,System.String,System.String,System.String,System.String,System.String,CrossPlatformLibrary.Maps.NavigationType)">
+            <summary>
+                Navigate to an address
+            </summary>
+            <param name="name">Label to display</param>
+            <param name="street">Street</param>
+            <param name="city">City</param>
+            <param name="state">Sate</param>
+            <param name="zip">Zip</param>
+            <param name="country">Country</param>
+            <param name="countryCode">Country Code if applicable</param>
+            <param name="navigationType">Navigation type</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapExtensions.IsVisiblePoint(Microsoft.Phone.Maps.Controls.Map,System.Windows.Point)">
+            <summary>
+                Gets whether the given point is within the map bounds.
+            </summary>
+            <param name="map">The map.</param>
+            <param name="point">The point.</param>
+            <returns>The <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="T:CrossPlatformLibrary.Maps.MapPushPinDependency">
+            <summary>
+                Class MapPushPinDependency.
+                Source: http://stackoverflow.com/questions/16417978/mvvm-windows-phone-8-adding-a-collection-of-pushpins-to-a-map.
+            </summary>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetItemsSource(System.Windows.DependencyObject)">
+            <summary>
+                Gets the items source.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The IEnumerable.</returns>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetItemsSource(System.Windows.DependencyObject,System.Collections.IEnumerable)">
+            <summary>
+                Sets the items source.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetCurrentLocation(System.Windows.DependencyObject)">
+            <summary>
+                Gets the current location.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The current GeoCoordinate.</returns>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetCurrentLocation(System.Windows.DependencyObject,System.Device.Location.GeoCoordinate)">
+            <summary>
+                Sets the current location.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetClusterTemplate(System.Windows.DependencyObject,System.Windows.DataTemplate)">
+            <summary>
+                Sets the cluster template.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetClusterTemplate(System.Windows.DependencyObject)">
+            <summary>
+                Gets the cluster template.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The DataTemplate.</returns>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetPushpinTemplate(System.Windows.DependencyObject,System.Windows.DataTemplate)">
+            <summary>
+                Sets the pushpin template.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetPushpinTemplate(System.Windows.DependencyObject)">
+            <summary>
+                Gets the pushpin template.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The DataTemplate.</returns>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetCurrentLocationPushpinTemplate(System.Windows.DependencyObject,System.Windows.DataTemplate)">
+            <summary>
+                Sets the current location pushpin template.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetCurrentLocationPushpinTemplate(System.Windows.DependencyObject)">
+            <summary>
+                Geturrents the location pushpin template.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The DataTemplate.</returns>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.SetClusteringDistance(System.Windows.DependencyObject,System.Int32)">
+            <summary>
+                Sets the clustering distance.
+                If set to zero, clustering is turned off.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:CrossPlatformLibrary.Maps.MapPushPinDependency.GetClusteringDistance(System.Windows.DependencyObject)">
+            <summary>
+                Gets the clustering distance.
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>The clustering distance.</returns>
+        </member>
+    </members>
+</doc>

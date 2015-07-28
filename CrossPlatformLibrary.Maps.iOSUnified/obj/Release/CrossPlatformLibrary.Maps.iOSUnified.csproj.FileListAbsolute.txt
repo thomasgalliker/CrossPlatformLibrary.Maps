@@ -1,0 +1,1 @@
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\obj\Release\CrossPlatformLibrary.Maps.iOSUnified.csprojResolveAssemblyReference.cache

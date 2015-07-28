@@ -1,0 +1,122 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:System.Windows.Controls"
+    xmlns:converters="clr-namespace:Xamarin.Converters;assembly=CrossPlatformLibrary.Platform"
+    xmlns:controls1="clr-namespace:CrossPlatformLibrary.Maps.Controls">
+
+    <converters:VisibilityInverter x:Key="VisibilityInverter" />
+
+    <!--Default control template for Pushpin (TO BE DONE)-->
+    <ControlTemplate x:Key="RestaurantPushpinControlTemplate" TargetType="controls1:Pushpin">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Vertical" 
+                            Margin="-16, 0, 0, 0" 
+                            Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MenuContent.Visibility, Mode=TwoWay}">
+                <Border HorizontalAlignment="Center"
+                            CornerRadius="8" 
+                            BorderBrush="{TemplateBinding Background}" 
+                            BorderThickness="2"
+                            Background="{StaticResource PhoneForegroundBrush}">
+                    <!-- This is the place where the content of the current restaurant is presented-->
+                    <ContentPresenter 
+                            Content="{TemplateBinding MenuContent}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                </Border>
+                <StackPanel Margin="0,-2,0,0">
+                    <Path   
+                            HorizontalAlignment="Center"
+                            Data="M0,0 L1,1 L2,0"
+                            Stroke="{TemplateBinding Background}"
+                            StrokeThickness="2" 
+                            Stretch="Fill"
+                            Margin="32,0"
+                            Height="12"
+                            Width="18" />
+                </StackPanel>
+                <StackPanel Margin="0,-15,0,0">
+                    <Path  
+                            HorizontalAlignment="Center"
+                            Data="M0,0 L0,1 L1,10 L2,1 L2,0"
+                            Fill="{TemplateBinding Foreground}"
+                            Stretch="Fill"
+                            Margin="32,0"
+                            Height="12"
+                            Width="18" />
+                </StackPanel>
+
+                <Grid HorizontalAlignment="Center" Width="64" Height="78" Margin="32, 0, 0, 0">
+                    <!-- Margin is needed to place the pin exactly to the GeoCoordinate anchor point -->
+                    <Image Source="/Themes/Images/pushpin.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
+                </Grid>
+            </StackPanel>
+
+            <Grid HorizontalAlignment="Center" Width="64" Height="78" Margin="-16, -71, 0, 0" Visibility="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MenuContent.Visibility, Mode=TwoWay, Converter={StaticResource VisibilityInverter}}">
+                <!-- Margin is needed to place the pin exactly to the GeoCoordinate anchor point -->
+                <Image Source="/Themes/Images/pushpin.png" Stretch="UniformToFill" HorizontalAlignment="Center"/>
+            </Grid>
+        </StackPanel>
+    </ControlTemplate>
+
+    <!-- Default Style used for Pushpin -->
+    <Style TargetType="controls1:Pushpin" x:Key="TestStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls1:Pushpin">
+                    <Grid x:Name="ContentGrid" FlowDirection="LeftToRight">
+                        <StackPanel Orientation="Vertical">
+                            <Grid Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" 
+                                  HorizontalAlignment="Left" 
+                                  MinHeight="31" 
+                                  MinWidth="29">
+                                <ContentPresenter x:Name="Presenter"
+                                                  Content="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Content}"
+                                                  FlowDirection="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FlowDirection}" 
+                                                  Margin="4"/>
+                            </Grid>
+                            <Polygon Fill="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Background}" 
+                                     Points="0,0 29,0 0,29" 
+                                     Width="29" 
+                                     Height="29" 
+                                     HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="PositionOrigin" Value="0,1" />
+        <Setter Property="Background" Value="Black" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+
+
+    <!-- Default Style used for MePOI -->
+    <Style TargetType="controls1:UserLocationMarker" x:Key="UserLocationMarkerStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="controls1:UserLocationMarker">
+                    <Grid x:Name="ContentGrid">
+                        <Polygon Fill="{TemplateBinding Background}" 
+                                 Points="0,17 17,0 34,17 17,34" 
+                                 Width="34" 
+                                 Height="34" 
+                                 HorizontalAlignment="Center" 
+                                 VerticalAlignment="Center" 
+                                 Stroke="#FF807F7C" 
+                                 StrokeThickness="1"/>
+                        <Ellipse Fill="{TemplateBinding Foreground}" 
+                                 Width="14" Height="14" 
+                                 HorizontalAlignment="Center" 
+                                 VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="PositionOrigin" Value="0.5,0.5" />
+        <Setter Property="Background" Value="Black" />
+        <Setter Property="Foreground" Value="{StaticResource PhoneAccentBrush}" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+</ResourceDictionary>

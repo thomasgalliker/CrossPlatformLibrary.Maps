@@ -1,0 +1,5 @@
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Debug\CrossPlatformLibrary.Maps.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Debug\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Debug\CrossPlatformLibrary.Maps.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Debug\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Debug\CrossPlatformLibrary.Geolocation.dll
