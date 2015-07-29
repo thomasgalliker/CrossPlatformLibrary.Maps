@@ -112,11 +112,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="CrossPlatformLibrary.Geolocation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.Geolocation.1.0.1-alpha\lib\wp8\CrossPlatformLibrary.Geolocation.dll</HintPath>
+      <HintPath>..\packages\CrossPlatformLibrary.Geolocation.1.0.4-alpha\lib\wp8\CrossPlatformLibrary.Geolocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CrossPlatformLibrary.Geolocation.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CrossPlatformLibrary.Geolocation.1.0.1-alpha\lib\wp8\CrossPlatformLibrary.Geolocation.Platform.dll</HintPath>
+      <HintPath>..\packages\CrossPlatformLibrary.Geolocation.1.0.4-alpha\lib\wp8\CrossPlatformLibrary.Geolocation.Platform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="CrossPlatformLibrary.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
