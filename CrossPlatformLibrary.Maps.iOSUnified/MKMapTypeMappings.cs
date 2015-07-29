@@ -1,11 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Linq;
 using MapKit;
-
 using UIKit;
-
 using Xamarin.Utils;
 
 namespace CrossPlatformLibrary.Maps

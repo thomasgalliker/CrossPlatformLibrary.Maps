@@ -5,3 +5,8 @@ C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibra
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\obj\Debug\CrossPlatformLibrary.Maps.Platform.pdb
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\CrossPlatformLibrary.Geolocation.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.iOSUnified\bin\iPhone\Debug\Microsoft.Practices.ServiceLocation.xml
