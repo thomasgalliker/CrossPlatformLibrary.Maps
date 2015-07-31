@@ -1,3 +1,5 @@
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.WindowsPhone8.csprojResolveAssemblyReference.cache
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.Platform.g.resources
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\CrossPlatformLibrary.Maps.Platform.xml
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\CrossPlatformLibrary.Maps.Platform.pdb
@@ -62,7 +64,5 @@ C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibra
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\vi-VN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\Bin\Release\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.WindowsPhone8.csprojResolveAssemblyReference.cache
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.Platform.g.resources
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone8\obj\Release\CrossPlatformLibrary.Maps.Platform.pdb
