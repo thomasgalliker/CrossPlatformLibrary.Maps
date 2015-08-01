@@ -1,6 +1,14 @@
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.Platform.pdb
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.Platform.pri
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Geolocation.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\CrossPlatformLibrary.Maps.WindowsStore.csprojResolveAssemblyReference.cache
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\CrossPlatformLibrary.Maps.Platform.pdb
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\priconfig.xml
@@ -14,7 +22,3 @@ C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibra
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\qualifiers.txt
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\qualifiers.txt.intermediate
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.dll
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Maps.pdb
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\obj\Debug\CrossPlatformLibrary.Maps.WindowsStore.csprojResolveAssemblyReference.cache
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsStore\bin\Debug\CrossPlatformLibrary.Geolocation.dll

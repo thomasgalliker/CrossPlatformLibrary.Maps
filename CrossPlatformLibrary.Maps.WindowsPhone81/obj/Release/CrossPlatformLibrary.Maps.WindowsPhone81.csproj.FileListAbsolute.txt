@@ -1,11 +1,13 @@
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.Platform.xml
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.Platform.pdb
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.Platform.pri
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.dll
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\Microsoft.Practices.ServiceLocation.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Geolocation.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.pdb
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.xml
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\Microsoft.Practices.ServiceLocation.xml
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\CrossPlatformLibrary.Maps.WindowsPhone81.csprojResolveAssemblyReference.cache
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\CrossPlatformLibrary.Maps.Platform.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\CrossPlatformLibrary.Maps.Platform.pdb

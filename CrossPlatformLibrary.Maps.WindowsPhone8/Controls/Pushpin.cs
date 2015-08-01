@@ -3,6 +3,8 @@ using System.Windows;
 using System.Windows.Markup;
 using System.Windows.Media;
 
+using CrossPlatformLibrary.Extensions;
+
 using Microsoft.Phone.Maps.Toolkit;
 
 namespace CrossPlatformLibrary.Maps.Controls // TODO GATH: Rename namespace! Dont use .net framework namespacesy

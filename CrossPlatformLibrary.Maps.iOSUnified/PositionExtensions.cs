@@ -2,7 +2,7 @@ using CoreLocation;
 
 using CrossPlatformLibrary.Geolocation;
 
-using Xamarin.Utils;
+using CrossPlatformLibrary.Utils;
 
 namespace CrossPlatformLibrary.Maps
 {

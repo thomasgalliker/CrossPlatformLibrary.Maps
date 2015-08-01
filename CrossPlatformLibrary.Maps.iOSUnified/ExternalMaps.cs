@@ -7,7 +7,7 @@ using MonoTouch.CoreLocation;
 using MonoTouch.Foundation;
 using MonoTouch.MapKit;
 #endif
-using Xamarin.Tracing;
+using CrossPlatformLibrary.Tracing;
 
 namespace CrossPlatformLibrary.Maps
 {

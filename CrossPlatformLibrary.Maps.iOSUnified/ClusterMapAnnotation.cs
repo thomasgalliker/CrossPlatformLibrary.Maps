@@ -4,7 +4,7 @@ using CrossPlatformLibrary.Geolocation;
 
 using MapKit;
 
-using Xamarin.Utils;
+using CrossPlatformLibrary.Utils;
 
 namespace CrossPlatformLibrary.Maps
 {

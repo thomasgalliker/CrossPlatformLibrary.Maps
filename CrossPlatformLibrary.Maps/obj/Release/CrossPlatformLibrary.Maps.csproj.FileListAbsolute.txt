@@ -1,7 +1,6 @@
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Release\CrossPlatformLibrary.Maps.csprojResolveAssemblyReference.cache
-C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\CrossPlatformLibrary.Maps.xml
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\CrossPlatformLibrary.Maps.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\CrossPlatformLibrary.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\CrossPlatformLibrary.Geolocation.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\Microsoft.Practices.ServiceLocation.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\Microsoft.Practices.ServiceLocation.pdb
