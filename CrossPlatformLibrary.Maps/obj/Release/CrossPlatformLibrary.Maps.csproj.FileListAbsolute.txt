@@ -7,3 +7,4 @@ C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibra
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\bin\Release\Microsoft.Practices.ServiceLocation.xml
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Release\CrossPlatformLibrary.Maps.dll
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Release\CrossPlatformLibrary.Maps.pdb
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps\obj\Release\CrossPlatformLibrary.Maps.csprojResolveAssemblyReference.cache

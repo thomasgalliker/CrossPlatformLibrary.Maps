@@ -22,3 +22,4 @@ C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibra
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\qualifiers.txt
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\qualifiers.txt.intermediate
 C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\src\CrossPlatformLibrary\Plugins\CrossPlatformLibrary.Maps\CrossPlatformLibrary.Maps.WindowsPhone81\bin\Release\CrossPlatformLibrary.Maps.xml
