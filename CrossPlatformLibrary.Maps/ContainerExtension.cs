@@ -6,7 +6,7 @@ namespace CrossPlatformLibrary.Maps
     {
         public void Initialize(ISimpleIoc container)
         {
-            container.RegisterPlatformSpecific<IExternalMaps>();
+            container.RegisterWithConvention<IExternalMaps>();
         }
     }
 }
