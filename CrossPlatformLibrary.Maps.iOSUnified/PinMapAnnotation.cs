@@ -1,10 +1,7 @@
 using CoreLocation;
-
 using CrossPlatformLibrary.Geolocation;
-
+using Guards;
 using MapKit;
-
-using CrossPlatformLibrary.Utils;
 
 namespace CrossPlatformLibrary.Maps
 {

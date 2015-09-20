@@ -2,7 +2,7 @@ using CoreLocation;
 
 using CrossPlatformLibrary.Geolocation;
 
-using CrossPlatformLibrary.Utils;
+using Guards;
 
 namespace CrossPlatformLibrary.Maps
 {

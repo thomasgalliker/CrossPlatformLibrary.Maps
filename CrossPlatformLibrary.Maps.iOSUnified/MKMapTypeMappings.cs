@@ -2,9 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Guards;
 using MapKit;
 using UIKit;
-using CrossPlatformLibrary.Utils;
 
 namespace CrossPlatformLibrary.Maps
 {
