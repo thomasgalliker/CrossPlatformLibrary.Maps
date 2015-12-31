@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Device.Location;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -64,7 +65,10 @@ namespace CrossPlatformLibrary.Maps
 
         private static void OnItemsSourcePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
-            Task.Factory.StartNew(() => UpdateItemsSource(d, e), CancellationToken.None, TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
+            Task.Factory.StartNew(() => UpdateItemsSource(d, e),
+                CancellationToken.None,
+                TaskCreationOptions.LongRunning,
+                TaskScheduler.FromCurrentSynchronizationContext());
         }
 
         private static void UpdateItemsSource(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -79,16 +83,8 @@ namespace CrossPlatformLibrary.Maps
                 var clusteringDistance = GetClusteringDistance(d);
 
                 // Perform clustering
-                Func<Position, bool> checkIsVisiblePoint =
-                    position => position != null && map.IsVisiblePoint(map.ConvertGeoCoordinateToViewportPoint(position.ToGeoCoordinate()));
-
-                Func<Position, Point> getViewportPoint = position =>
-                    {
-                        var p = map.ConvertGeoCoordinateToViewportPoint(position.ToGeoCoordinate());
-                        return new Point(p.X, p.Y);
-                    };
-
-                var clusterer = new PushpinClusterer<IClusteredGeoObject>(newPushPinCollection, clusteringDistance, checkIsVisiblePoint, getViewportPoint);
+                var visiblePoints = GetVisiblePoints(map, newPushPinCollection);
+                var clusterer = new PushpinClusterer<IClusteredGeoObject>(visiblePoints, clusteringDistance);
                 clusterer.RenderPins(map.ZoomLevel);
 
                 // Update map on UI
@@ -138,6 +134,19 @@ namespace CrossPlatformLibrary.Maps
                                 map.Layers.Insert(ItemsSourceLayerIndex, layer);
                             }
                         });
+            }
+        }
+
+        private static IEnumerable<PositionToPointWrapper<IClusteredGeoObject>> GetVisiblePoints(Map map, IEnumerable<IClusteredGeoObject> clusteredGeoObjects)
+        {
+            foreach (var clusteredGeoObject in clusteredGeoObjects)
+            {
+                var point = map.ConvertGeoCoordinateToViewportPoint(clusteredGeoObject.Location.ToGeoCoordinate());
+                var isVisible = map.IsVisiblePoint(point);
+                if (isVisible)
+                {
+                    yield return new PositionToPointWrapper<IClusteredGeoObject>(clusteredGeoObject, new Point(point.X, point.Y));
+                }
             }
         }
 

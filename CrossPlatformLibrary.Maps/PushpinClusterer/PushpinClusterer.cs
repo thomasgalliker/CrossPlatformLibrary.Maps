@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 
 using CrossPlatformLibrary.Geolocation;
 
@@ -11,19 +10,15 @@ namespace CrossPlatformLibrary.Maps.PushpinClusterer
         where T : IClusteredGeoObject
     {
         private readonly double distanceThreshold;
-        private readonly IEnumerable<T> pins;
-        private readonly Func<Position, bool> checkIsVisiblePoint;
-        private readonly Func<Position, Point> getViewportPoint;
+        private readonly IEnumerable<PositionToPointWrapper<T>> pins;
 
-        public PushpinClusterer(IEnumerable<T> pins, double distanceTreshold, Func<Position, bool> checkIsVisiblePoint, Func<Position, Point> getViewportPoint)
+        public PushpinClusterer(IEnumerable<PositionToPointWrapper<T>> pins, int distanceTreshold)
         {
             ////this.map.ViewChanged += (s, e) => this.RenderPins();    //TODO GATH: Trigger cluster refreshes from here! (should be possible)
             ////this.map.ResolveCompleted += (sender, args) => { };
 
             this.pins = pins;
             this.distanceThreshold = distanceTreshold;
-            this.checkIsVisiblePoint = checkIsVisiblePoint;
-            this.getViewportPoint = getViewportPoint;
 
             this.PushpinModels = new ObservableCollection<ClusteredPushpinItem<T>>();
         }
@@ -49,10 +44,9 @@ namespace CrossPlatformLibrary.Maps.PushpinClusterer
             var pinsToAdd = new List<PushpinContainer<T>>();
 
             // consider each pin in turn
-            var visiblePushpins = this.pins.Where(p => this.checkIsVisiblePoint(p.Location)).ToList();
-            foreach (T pin in visiblePushpins)
+            foreach (var pin in this.pins)
             {
-                var newPinContainer = new PushpinContainer<T>(pin, this.getViewportPoint(pin.Location));
+                var newPinContainer = new PushpinContainer<T>(pin.Value, pin.Point);
 
                 bool addNewPin = true;
 
@@ -94,5 +88,55 @@ namespace CrossPlatformLibrary.Maps.PushpinClusterer
                 handler(this, EventArgs.Empty);
             }
         }
+    }
+
+    public struct PositionToPointWrapper<T> where T : IClusteredGeoObject
+    {
+        private readonly T value;
+        private readonly Point point;
+        private readonly bool isVisible;
+
+        public PositionToPointWrapper(T value)
+        {
+            this.value = value;
+            this.point = default(Point);
+            this.isVisible = false;
+        }
+
+        public PositionToPointWrapper(T value, Point point)
+        {
+            this.value = value;
+            this.point = point;
+            this.isVisible = true;
+        }
+
+        public T Value
+        {
+            get
+            {
+                return this.value;
+            }
+        }
+
+        public Point Point
+        {
+            get
+            {
+                //if (this.isVisible == false)
+                //{
+                //    throw new InvalidOperationException("Point is not visible");
+                //}
+
+                return this.point;
+            }
+        }
+
+        ////public bool IsVisible
+        ////{
+        ////    get
+        ////    {
+        ////        return this.isVisible;
+        ////    }
+        ////}
     }
 }
