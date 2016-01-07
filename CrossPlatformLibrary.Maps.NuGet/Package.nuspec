@@ -6,7 +6,7 @@
     <title>CrossPlatformLibrary.Maps</title>
     <authors>Thomas Galliker</authors>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <projectUrl>https://nuget.org/packages/CrossPlatformLibrary.Maps</projectUrl>
+    <projectUrl>https://github.com/thomasgalliker/CrossPlatformLibrary.Maps</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>CrossPlatformLibrary.Maps is a plug-in for map related concerns.</summary>
@@ -19,7 +19,7 @@
       - Performance improvement in PushpinClusterer
       - PDBs included in deployment
     </releaseNotes>
-    <copyright>Copyright 2015</copyright>
+    <copyright>Copyright 2016</copyright>
     <language>en-US</language>
     <dependencies>
       <group targetFramework="monotouch10">
