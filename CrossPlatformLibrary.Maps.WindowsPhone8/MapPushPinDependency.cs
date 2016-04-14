@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows;
 
 using CrossPlatformLibrary.Geolocation;
+using CrossPlatformLibrary.Maps.Clustering;
+using CrossPlatformLibrary.Maps.Clustering.Algorithms;
 using CrossPlatformLibrary.Maps.Controls;
-using CrossPlatformLibrary.Maps.PushpinClusterer;
+using CrossPlatformLibrary.Tracing;
 
 using Microsoft.Phone.Maps.Controls;
-
-using Point = CrossPlatformLibrary.Maps.PushpinClusterer.Point;
 
 namespace CrossPlatformLibrary.Maps
 {
@@ -66,9 +66,9 @@ namespace CrossPlatformLibrary.Maps
         private static void OnItemsSourcePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             Task.Factory.StartNew(() => UpdateItemsSource(d, e),
-                CancellationToken.None,
-                TaskCreationOptions.LongRunning,
-                TaskScheduler.FromCurrentSynchronizationContext());
+              CancellationToken.None,
+              TaskCreationOptions.LongRunning,
+              TaskScheduler.FromCurrentSynchronizationContext());
         }
 
         private static void UpdateItemsSource(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -80,19 +80,28 @@ namespace CrossPlatformLibrary.Maps
                 // Read dependency properties
                 var pushpinTemplate = GetPushpinTemplate(d);
                 var clusterPushpinTemplate = GetClusterTemplate(d);
-                var clusteringDistance = GetClusteringDistance(d);
+                ////var clusteringDistance = GetClusteringDistance(d);
 
                 // Perform clustering
-                var visiblePoints = GetVisiblePoints(map, newPushPinCollection);
-                var clusterer = new PushpinClusterer<IClusteredGeoObject>(visiblePoints, clusteringDistance);
-                clusterer.RenderPins(map.ZoomLevel);
+                var topLeft = map.ConvertViewportPointToGeoCoordinate(new System.Windows.Point(0, 0));
+                var bottomRight = map.ConvertViewportPointToGeoCoordinate(new System.Windows.Point(map.ActualWidth, map.ActualHeight));
+                var boundingRectangle = LocationRect.CreateLocationRect(topLeft.ToPosition(), bottomRight.ToPosition());
+
+                //var clusterer = new SectorClusterer<IClusteredGeoObject>();
+                var clusterer = new RectangularClusterer<IClusteredGeoObject>();
+
+                //var stopwatch = new Stopwatch();
+                //stopwatch.Start();
+                var clusteredLocations = clusterer.Cluster(newPushPinCollection, boundingRectangle,  map.ZoomLevel);
+                //stopwatch.Stop();
+                //Console.WriteLine("UPDATED CLUSTER IN {0}ms", stopwatch.ElapsedMilliseconds);
 
                 // Update map on UI
                 map.Dispatcher.BeginInvoke(
                     () =>
                         {
                             // Remove layer which hosts pushpins
-                            var clusteredPushpinLayer = map.Layers.FirstOrDefault(x => x.All(y => y.Content is ClusteredPushpinItem<IClusteredGeoObject>));
+                            var clusteredPushpinLayer = map.Layers.First(x => x.All(y => y.Content is IClusteredLocation<IClusteredGeoObject>));
                             map.Layers.Remove(clusteredPushpinLayer);
 
                             // Create new layer
@@ -100,7 +109,7 @@ namespace CrossPlatformLibrary.Maps
 
                             // The descending-by-latitude ordering makes sure the pins are not overlapping eachother
                             Position lastGeoCoordinate = Position.Unknown;
-                            foreach (var pushPinModel in clusterer.PushpinModels.OrderByDescending(p => p.Location.Latitude))
+                            foreach (var pushPinModel in clusteredLocations.OrderByDescending(p => p.Location.Latitude))
                             {
                                 var mapOverlay = new MapOverlay
                                 {
@@ -136,20 +145,7 @@ namespace CrossPlatformLibrary.Maps
                         });
             }
         }
-
-        private static IEnumerable<PositionToPointWrapper<IClusteredGeoObject>> GetVisiblePoints(Map map, IEnumerable<IClusteredGeoObject> clusteredGeoObjects)
-        {
-            foreach (var clusteredGeoObject in clusteredGeoObjects)
-            {
-                var point = map.ConvertGeoCoordinateToViewportPoint(clusteredGeoObject.Location.ToGeoCoordinate());
-                var isVisible = map.IsVisiblePoint(point);
-                if (isVisible)
-                {
-                    yield return new PositionToPointWrapper<IClusteredGeoObject>(clusteredGeoObject, new Point(point.X, point.Y));
-                }
-            }
-        }
-
+        
         private static void OnCurrentLocationPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             Task.Factory.StartNew(() => UpdateCurrentLocation(d, e), CancellationToken.None, TaskCreationOptions.LongRunning, TaskScheduler.FromCurrentSynchronizationContext());
