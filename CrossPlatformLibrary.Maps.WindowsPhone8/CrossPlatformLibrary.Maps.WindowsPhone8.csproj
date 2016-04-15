@@ -90,7 +90,6 @@
     <Compile Include="Converters\MapCartographicModeConverter.cs" />
     <Compile Include="Converters\MapColorModeConverter.cs" />
     <Compile Include="ExternalMaps.cs" />
-    <Compile Include="MapExtensions.cs" />
     <Compile Include="MapPushPinDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
