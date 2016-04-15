@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>CrossPlatformLibrary.Maps</id>
-    <version>2.0.0-pre1</version>
+    <version>2.0.0-pre2</version>
     <title>CrossPlatformLibrary.Maps</title>
     <authors>Thomas Galliker</authors>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
@@ -16,7 +16,7 @@
       windows phone winphone wp8 wpa81 win81 windowsphone android xamarin.forms xamarin.ios ios monoandroid monodroid monotouch mvvmcross mvvmlight
     </tags>
     <releaseNotes>
-      2.0.0-pre1
+      2.0.0-pre2
       - New clustering algorithms with improved performance
       
       1.0.23
@@ -27,7 +27,7 @@
     <language>en-US</language>
     <dependencies>
       <group>
-        <dependency id="CrossPlatformLibrary.Geolocation" version="1.0.24"/>
+        <dependency id="CrossPlatformLibrary.Geolocation" version="1.0.25"/>
       </group>
     </dependencies>
   </metadata>
