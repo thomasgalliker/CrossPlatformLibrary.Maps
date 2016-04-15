@@ -83,9 +83,9 @@ namespace CrossPlatformLibrary.Maps
                 ////var clusteringDistance = GetClusteringDistance(d);
 
                 // Perform clustering
-                var topLeft = map.ConvertViewportPointToGeoCoordinate(new System.Windows.Point(0, 0));
-                var bottomRight = map.ConvertViewportPointToGeoCoordinate(new System.Windows.Point(map.ActualWidth, map.ActualHeight));
-                var boundingRectangle = LocationRect.CreateLocationRect(topLeft.ToPosition(), bottomRight.ToPosition());
+                var visibleAreaTopLeft = map.ConvertViewportPointToGeoCoordinate(new Point(0, 0));
+                var visibleAreaBottomRight = map.ConvertViewportPointToGeoCoordinate(new Point(map.ActualWidth, map.ActualHeight));
+                var boundingRectangle = LocationRect.CreateLocationRect(visibleAreaTopLeft.ToPosition(), visibleAreaBottomRight.ToPosition());
 
                 //var clusterer = new SectorClusterer<IClusteredGeoObject>();
                 var clusterer = new RectangularClusterer<IClusteredGeoObject>();
@@ -101,7 +101,7 @@ namespace CrossPlatformLibrary.Maps
                     () =>
                         {
                             // Remove layer which hosts pushpins
-                            var clusteredPushpinLayer = map.Layers.First(x => x.All(y => y.Content is IClusteredLocation<IClusteredGeoObject>));
+                            var clusteredPushpinLayer = map.Layers.FirstOrDefault(x => x.All(y => y.Content is IClusteredLocation<IClusteredGeoObject>));
                             map.Layers.Remove(clusteredPushpinLayer);
 
                             // Create new layer
