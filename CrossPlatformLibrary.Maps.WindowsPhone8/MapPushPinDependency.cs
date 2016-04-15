@@ -92,7 +92,18 @@ namespace CrossPlatformLibrary.Maps
 
                 //var stopwatch = new Stopwatch();
                 //stopwatch.Start();
-                var clusteredLocations = clusterer.Cluster(newPushPinCollection, boundingRectangle,  map.ZoomLevel);
+                IEnumerable<IClusteredLocation<IClusteredGeoObject>> clusteredLocations = clusterer.Cluster(newPushPinCollection, boundingRectangle, map.ZoomLevel);
+                if (map.ZoomLevel >= 18)
+                {
+                    clusteredLocations = clusteredLocations.SelectMany(x => x.ClusteredItems).Select(
+                        clusteredGeoObject =>
+                            {
+                                var rect = new ClusteredLocationRect<IClusteredGeoObject>(boundingRectangle);
+                                rect.Add(clusteredGeoObject);
+                                return rect;
+                            }).ToList();
+                }
+
                 //stopwatch.Stop();
                 //Console.WriteLine("UPDATED CLUSTER IN {0}ms", stopwatch.ElapsedMilliseconds);
 
@@ -126,8 +137,9 @@ namespace CrossPlatformLibrary.Maps
                                 {
                                     mapOverlay.ContentTemplate = pushpinTemplate;
 
-                                    // In case two/more pins have exactly the same GPS position, we add a random offset to longitude/latitude.
-                                    if (pushPinModel.Location == lastGeoCoordinate)
+                                    // In case two/more pins have the same GPS position, we add a random offset to longitude/latitude.
+                                    if (Math.Abs(pushPinModel.Location.Latitude - lastGeoCoordinate.Latitude) < 0.00005 &&
+                                        Math.Abs(pushPinModel.Location.Longitude - lastGeoCoordinate.Longitude) < 0.00005)
                                     {
                                         mapOverlay.GeoCoordinate = lastGeoCoordinate.WithRandomOffset().ToGeoCoordinate();
                                     }
